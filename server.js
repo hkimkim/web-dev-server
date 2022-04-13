@@ -9,7 +9,7 @@ import mongoose from 'mongoose';
 const app = express();
 app.use(express.json());
 app.use(cors());
-mongoose.connect('mongodb://localhost:27017/webdev');
+// mongoose.connect('mongodb://localhost:27017/webdev');
 
 app.get('/', (req, res) => {res.send("Welcome to Full Stack Development!")})
 
@@ -18,6 +18,6 @@ helloController(app);
 userController(app);
 tuitsController(app);
 
-app.listen(process.env.PORT || 4000);
+// app.listen(process.env.PORT || 4000);
 
-// app.listen(4000);
+app.listen(4000);
