@@ -1,4 +1,4 @@
-import tuitsModel from "./tuits-model";
+import tuitsModel from "./tuits-model.js"
 
 export const findAllTuits = () => tuitsModel.find();
 export const createTuit = (tuit) => tuitsModel.create(tuit);
