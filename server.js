@@ -5,11 +5,9 @@ import userController from './controllers/user-controller.js';
 import tuitsController from './controllers/tuits-controller.js'
 import mongoose from 'mongoose';
 
-// const express = require('express');
 const app = express();
 app.use(express.json());
 app.use(cors());
-// mongoose.connect('mongodb://localhost:27017/webdev');
 
 const CONNECTION_STRING = process.env.DB_CONNECTION_STRING
  || 'mongodb://localhost:27017/webdev'
