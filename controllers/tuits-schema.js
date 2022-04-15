@@ -12,7 +12,10 @@ const schema = mongoose.Schema({
        default: 0,
     },
     postedBy: {
-        username: String
+        username: {
+            type: String,
+            default: 'i_am_choonsik',
+        }
     },
     logo_image: {
         type: String,
@@ -21,6 +24,10 @@ const schema = mongoose.Schema({
     liked: {
         type: Boolean,
         default: false,
+    },
+    likes: {
+        type: Number,
+        default: 0,
     }
 }, {collection: 'tuits'});
 export default schema;
