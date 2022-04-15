@@ -12,7 +12,7 @@ const createTuit = (req, res) => {
     newTuit.handle = "i_am_choonsik";
     newTuit.time = "1h";
     newTuit.title = "Default";
-    newTuit.tuit = "Tuit! Tuit!";
+    // newTuit.tuit = "Tuit! Tuit!";
     newTuit.logo_image = "https://pbs.twimg.com/profile_images/1407528509170401280/B7uaH6fC_400x400.jpg",
     newTuit.avatar_image = "";
     newTuit.tuits = "0K";

@@ -8,6 +8,8 @@ export default [
         "comments": 12,
         "retuits": 202,
       },
+      "likes": 345,
+      "liked": false,
       "logo_image" : "https://pbs.twimg.com/profile_images/1321163587679784960/0ZxKlEKB.jpg",
 
     },
@@ -20,6 +22,8 @@ export default [
         "comments": 120,
         "retuits": 20,
       },
+      "likes": 32,
+      "liked": false,
       "logo_image" : "https://pbs.twimg.com/profile_images/1321163587679784960/0ZxKlEKB.jpg",
     }
   ];
