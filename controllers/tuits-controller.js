@@ -7,21 +7,21 @@ const createTuit = async (req, res) => {
     const newTuit = req.body;
     const insertedTuit = await tuitsDao.createTuit(newTuit);
 
-    // newTuit._id = (new Date()).getTime() + '';
-    // newTuit.topic = "Cat";
-    // newTuit.postedBy.username = "i_am_choonsik";
-    // newTuit.liked = false;
-    // newTuit.verified = false;
-    // newTuit.handle = "i_am_choonsik";
-    // newTuit.time = "1h";
-    // newTuit.title = "Default";
+    newTuit._id = (new Date()).getTime() + '';
+    newTuit.topic = "Cat";
+    newTuit.postedBy.username = "i_am_choonsik";
+    newTuit.liked = false;
+    newTuit.verified = false;
+    newTuit.handle = "i_am_choonsik";
+    newTuit.time = "1h";
+    newTuit.title = "Default";
     // newTuit.tuit = "Tuit! Tuit!";
-    // newTuit.logo_image = "https://pbs.twimg.com/profile_images/1407528509170401280/B7uaH6fC_400x400.jpg",
-    // newTuit.avatar_image = "";
-    // newTuit.tuits = "0K";
-    // newTuit.stats.comments = 0;
-    // newTuit.stats.likes = 0;
-    // newTuit.stats.retuits = 0;
+    newTuit.logo_image = "https://pbs.twimg.com/profile_images/1407528509170401280/B7uaH6fC_400x400.jpg",
+    newTuit.avatar_image = "";
+    newTuit.tuits = "0K";
+    newTuit.stats.comments = 0;
+    newTuit.stats.likes = 0;
+    newTuit.stats.retuits = 0;
 
     // tuits.push(newTuit);
     res.json(newTuit);
